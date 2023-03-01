@@ -1,1 +1,1 @@
-# Servicio-Peluqueria
+# Servicio de Peluquería
