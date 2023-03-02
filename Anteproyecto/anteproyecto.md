@@ -16,7 +16,7 @@
 ## **Temática**<a name="id3"></a>
   La temática que he elegido para realizar el proyecto será de temática estética, relacionada con el tema de la peluquería.
 ## **Título**<a name="id4"></a>
-  El título del proyecto se llama
+  El título del proyecto se llama Jorge Peluquero.
 ## **Prototipo**<a name="id5"></a>
   El prototipo del proyecto será el siguiente:
   
