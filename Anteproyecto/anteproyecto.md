@@ -21,10 +21,11 @@
   El prototipo del proyecto será el siguiente:
   
   - Index:
-  - Sobre Nosotros
-  - Noticias
-  - Productos
-  - Método de Pago
-  - Reservar Cita
-  - Galería
-  - Contacto
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Index.png)
+  - Sobre Nosotros:
+  - Noticias:
+  - Productos:
+  - Método de Pago:
+  - Reservar Cita:
+  - Galería:
+  - Contacto:
