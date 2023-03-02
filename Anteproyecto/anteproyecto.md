@@ -42,6 +42,7 @@
   
   - Reservar Cita:
   
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Reservar%20cita.png)
   
   - Galería:
   
