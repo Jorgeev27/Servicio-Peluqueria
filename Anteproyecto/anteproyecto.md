@@ -19,6 +19,7 @@
   El título del proyecto se llama Jorge Peluquero.
 ## **Prototipo**<a name="id5"></a>
   El prototipo del proyecto será el siguiente:
+  (Es una primera versión del prototipo del proyecto, y la estética puede ser modificada en un futuro cercano).
   
   - Index:
   
