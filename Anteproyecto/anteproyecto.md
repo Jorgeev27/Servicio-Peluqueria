@@ -19,3 +19,12 @@
   El título del proyecto se llama
 ## **Prototipo**<a name="id5"></a>
   El prototipo del proyecto será el siguiente:
+  
+  - Index:
+  - Sobre Nosotros
+  - Noticias
+  - Productos
+  - Método de Pago
+  - Reservar Cita
+  - Galería
+  - Contacto
