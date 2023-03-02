@@ -21,6 +21,7 @@
   El prototipo del proyecto será el siguiente:
   
   - Index:
+  
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Index.png)
   - Sobre Nosotros:
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Sobre%20nosotros.png)
