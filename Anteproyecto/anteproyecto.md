@@ -23,23 +23,31 @@
   - Index:
   
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Index.png)
+  
   - Sobre Nosotros:
   
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Sobre%20nosotros.png)
+  
   - Noticias:
   
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Noticias.png)
+  
   - Productos:
   
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Productos.png)
+  
   - Método de Pago:
   
-  - ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Método%20de%20pago.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Método%20de%20pago.png)
+  
   - Reservar Cita:
+  
   
   - Galería:
   
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Galería.png)
+  
   - Contacto:
   
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Contacto.png)
+  
