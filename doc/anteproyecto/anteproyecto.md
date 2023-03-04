@@ -26,41 +26,41 @@
   
   - Index:
   
-  <img src="../img/Index.png"/>
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Index.png)
+  
+  - Sign In:
 
-    - Sign In:
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sign%20in.png)
 
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sign%20in.png)
+  - Sign Up:
 
-    - Sign Up:
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sign%20up.png)
 
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sign%20up.png)
+  - Sobre Nosotros:
 
-    - Sobre Nosotros:
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sobre%20nosotros.png)
 
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sobre%20nosotros.png)
+  - Noticias:
 
-    - Noticias:
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Noticias.png)
 
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Noticias.png)
+  - Productos:
 
-    - Productos:
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Productos.png)
 
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Productos.png)
+  - Método de Pago:
 
-    - Método de Pago:
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/M%C3%A9todo%20de%20pago.png)
 
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/M%C3%A9todo%20de%20pago.png)
+  - Reservar Cita:
 
-    - Reservar Cita:
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Reservar%20cita.png)
 
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Reservar%20cita.png)
+  - Galería:
 
-    - Galería:
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Galer%C3%ADa.png)
 
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Galer%C3%ADa.png)
+  - Contacto:
 
-    - Contacto:
-
-    ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Contacto.png)
- </div>
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Contacto.png)
+</div>
