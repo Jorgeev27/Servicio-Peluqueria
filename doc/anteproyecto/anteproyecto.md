@@ -1,5 +1,6 @@
 <div align="justify">
-  # Anteproyecto - Servicio Peluquería
+## Anteproyecto - Servicio Peluquería
+
 ## Jorge Escobar Viñuales
 
 ## **Índice**<a name = "id1"></a>
