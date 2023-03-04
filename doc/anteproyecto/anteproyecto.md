@@ -2,23 +2,32 @@
 
 # **Jorge Escobar Viñuales**
 
-## **Índice**<a name = "id1"></a>
-[Índice](#id1)<br>
-[Objetivos del Proyecto](#id2)<br>
-[Temática](#id3)<br>
-[Título](#id4)<br>
-[Boceto](#id5)<br>
+## **1. Índice**<a name = "id1"></a>
+1. [Índice](#id1)<br>
+2. [Objetivos del Proyecto](#id2)<br>
+3. [Temática](#id3)<br>
+4. [Título](#id4)<br>
+5. [Boceto](#id5)<br>
 
-## **Objetivos del Proyecto**<a name="id2"></a>
+## **2. Objetivos del Proyecto**<a name="id2"></a>
 <div align="justify">
-  El objetivo con el que hago este proyecto es crear un servicio web donde los usuarios (en este caso, los clientes de la peluquería) puedan reservar su corte de pelo seleccionado y preferido, y elegir el día, hora y si quieren pagar al instante o en el momento del corte de pelo. Además, de hacer algo renovador con las peluquerías de hoy en día. Si el usuario no acude a la cita por algunas cuestiones (ya sean temas personales, temas trabajo, etc.), se le devolverá el dinero correspondiente.
+  El objetivo principal de este proyecto es el desarrollo de una aplicación web para el servicio de peluquería, permitiendo así a los clientes la posibilidad de elegir su estilo de corte de pelo y de una mejora considerable en la gestión del peluquero en cuanto al horario de su trabajo.
 
-  Estamos acostumbrados a ir a nuestra peluquería de toda la vida a pedir cita, o incluso a llamar para reservar pero con este proyecto se puede dar un paso más adelante ya que el usuario puede elegir el corte de pelo que prefiera, el día o también poder pagar al instante.
+  Para ello, esto se divide en los siguientes rasgos:
+
+  - En cuanto al rasgo de la gestión, el administrador de la peluquería (en este caso, el peluquero) contará con la totalidad de la aplicación. Dando así, de alta o de baja, los cortes de pelo necesarios.
+
+  - En cuanto al rasgo de los usuarios, podrán registrarse en la aplicación para tener mejor facilidad. Así pues, podrán modificar, añadir o incluso, borrar los datos, dándose así de baja en la aplicación.
+
+  - En cuanto al rasgo del listado de cortes de pelo, los usuarios podrán ver los diferentes cortes de pelo que habrán en éste.
+
+  - En cuanto al rasgo del calendario y horario, una vez que el usuario haya seleccionado el corte de pelo que se quiere realizar, se accederá al calendario y horario que quiere reservar. Además, podrá comprobar qué días y horas están seleccionados.
+
 </div>
   
 ## **Temática**<a name="id3"></a>
 <div align="justify">
-  La temática que he elegido para realizar el proyecto será de temática estética, relacionada con el tema de la peluquería.
+  La temática que he elegido para realizar el proyecto será de estética, relacionada con el servicio de peluquería.
 </div>
 
 ## **Título**<a name="id4"></a>
