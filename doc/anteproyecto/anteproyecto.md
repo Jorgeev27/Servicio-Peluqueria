@@ -23,33 +23,41 @@
   
   - Index:
   
-  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Index.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Index.png)
+  
+  - Sign In:
+  
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sign%20in.png)
+  
+  - Sign Up:
+  
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sign%20up.png)
   
   - Sobre Nosotros:
   
-  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Sobre%20nosotros.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Sobre%20nosotros.png)
   
   - Noticias:
   
-  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Noticias.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Noticias.png)
   
   - Productos:
   
-  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Productos.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Productos.png)
   
   - Método de Pago:
   
-  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Método%20de%20pago.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/M%C3%A9todo%20de%20pago.png)
   
   - Reservar Cita:
   
-  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Reservar%20cita.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Reservar%20cita.png)
   
   - Galería:
   
-  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Galería.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Galer%C3%ADa.png)
   
   - Contacto:
   
-  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/Anteproyecto/img/Contacto.png)
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Contacto.png)
   
