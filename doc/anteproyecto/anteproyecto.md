@@ -7,7 +7,7 @@
 [Objetivos del Proyecto](#id2)<br>
 [Temática](#id3)<br>
 [Título](#id4)<br>
-[Prototipo](#id5)<br>
+[Boceto](#id5)<br>
 
 ## **Objetivos del Proyecto**<a name="id2"></a>
   El objetivo con el que hago este proyecto es crear un servicio web donde los usuarios (en este caso, los clientes de la peluquería) puedan reservar su corte de pelo seleccionado y preferido, y elegir el día, hora y si quieren pagar al instante o en el momento del corte de pelo. Además, de hacer algo renovador con las peluquerías de hoy en día. Si el usuario no acude a la cita por algunas cuestiones (ya sean temas personales, temas trabajo, etc.), se le devolverá el dinero correspondiente.
@@ -17,9 +17,9 @@
   La temática que he elegido para realizar el proyecto será de temática estética, relacionada con el tema de la peluquería.
 ## **Título**<a name="id4"></a>
   El título del proyecto se llama Jorge Peluquero.
-## **Prototipo**<a name="id5"></a>
-  El prototipo del proyecto será el siguiente:
-  (Es una primera versión del prototipo del proyecto, y ésta puede ser modificada en un futuro cercano).
+## **Boceto**<a name="id5"></a>
+  El boceto del proyecto será el siguiente:
+  (Es una primera versión del boceto del proyecto, y ésta puede ser modificada en un futuro cercano).
   
   - Index:
   
