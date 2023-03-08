@@ -13,12 +13,12 @@
   Se plantea la idea principal del proyecto de nuestro servicio de aplicación.
 </div>
   
-## **Casos de uso**<a name="id3"></a>
+## **3. Casos de uso**<a name="id3"></a>
 <div align="justify">
   Breve descripción (a base de dibujo) de la notación gráfica de nuestra aplicación.
 </div>
 
-## **Entidad-Relación**<a name="id4"></a>
+## **4. Entidad-Relación**<a name="id4"></a>
 <div align="justify">
   Modelo de base de datos de nuestra aplicación.
 </div>
