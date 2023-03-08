@@ -8,7 +8,7 @@
 3. [Casos de uso](#id3)<br>
 4. [Entidad-Relación](#id4)<br>
 
-## **2. Anteproyecto**<a name="id2"></a>
+<a href="https://github.com/Jorgeev27/Servicio-Peluqueria/tree/main/doc/anteproyecto">## **2. Anteproyecto**</a><a name="id2"></a>
 <div align="justify">
   Se plantea la idea principal del proyecto de nuestro servicio de aplicación.
 </div>
