@@ -1,4 +1,7 @@
 # **Documentación - Servicio Peluquería**
+<div align="justify">
+  Información necesaria para describir el servicio de nuestra aplicación de peluquería.
+</div>
 
 # **Jorge Escobar Viñuales**
 
