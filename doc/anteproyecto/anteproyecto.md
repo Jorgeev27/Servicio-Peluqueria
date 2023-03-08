@@ -66,7 +66,7 @@
 
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Productos.png)
 
-  - Método de Pago: página en la que una vez el usuario haya seleccionado el corte de pelo que se quiere realizar, se mostrará el método de pago correspondiente (ya sea tarjeta, pago inmediato, o efectivo, pago para realizar cuando se ejecute el corte).
+  - Método de Pago: página en la que una vez el usuario haya seleccionado el corte de pelo que se quiere realizar, se mostrará el método de pago correspondiente (ya sea tarjeta o efectivo. El pago se realizará cuando se ejecute el corte).
 
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/M%C3%A9todo%20de%20pago.png)
 
