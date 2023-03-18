@@ -15,7 +15,7 @@
 
   - Cliente: ID_Cliente(Primary Key), Nombre_Cliente, NombreUsuario_Cliente, Apellido1, Apellido2, DNI, CorreoElectronico_Cliente, Telefono_movil.
 
-  - CitaCorte: Fecha(PK), Hora, ID_Cliente(Foreign Key), Nombre_Cliente, ID_CortePelo(Foreign Key), Nombre_CortePelo, Precio_CortePelo, ID_TipoCorte(Foreign Key), Nombre_TipoCorte.
+  - CitaCorte: Fecha(Primary Key), Hora, ID_Cliente(Foreign Key), Nombre_Cliente, ID_CortePelo(Foreign Key), Nombre_CortePelo, Precio_CortePelo, ID_TipoCorte(Foreign Key), Nombre_TipoCorte.
 
   - CortePelo: ID_CortePelo(Primary Key), Nombre_CortePelo, Precio_CortePelo, ID_TipoCorte(Foreign Key), Nombre_TipoCorte.
 
