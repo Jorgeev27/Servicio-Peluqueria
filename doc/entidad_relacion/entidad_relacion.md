@@ -25,4 +25,6 @@
 ## **3. Entidad-Relación con las Bases de Datos**<a name="id3"></a>
 <div align="justify">
   Estas tablas de Bases de Datos (mencionadas anteriormente en el punto 2) están relacionadas de la siguiente forma que se va a mostrar a continuación:
+  
+  ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/entidad_relacion/DrawIO/Entidad-Relacion.png)
 </div>
