@@ -14,7 +14,7 @@
                 //$conexion = new PDO("sqlite:/var/www/phpdata/productos.sqlite"); //PARA SQLITE
                 $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //También se puede omitir
             }catch(PDOException $ex){
-                die("ERROR!! Al establecer conexion con el servidor de base de datos");
+                die("ERROR!! Al establecer conexion con el servidor de base de datos". $ex->getMessage());
             }
             return $conexion;
         }
