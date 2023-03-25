@@ -1,12 +1,12 @@
 <?php
     declare(strict_types = 1);
     class BaseConnection{
-        /* Una variable estática privada que se utilizará para almacenar el número de filas afectadas por la última consulta. */
+        /* Una variable que se utiliza para almacenar el número de filas afectadas por la última consulta. */
         private static $lastAffectedRows;
 
         /**
-         * Crea una conexión a la base de datos y lo devuelve como un objeto PDO.
-         * @return PDO - Conexión a la base de datos.
+         * Devuelve un objeto PDO que representa una conexión a una base de datos.
+         * @return conexion - PDO la conexión a la base de datos.
          */
         public static function getConexion(): PDO{
             try{
@@ -20,9 +20,9 @@
         }
 
         /**
-         * Se conecta a la base de datos y ejecuta la consulta.
+         * Se conecta a la base de datos, ejecuta la consulta y devuelve el resultado.
          * @param string sql - Consulta SQL a ejecutar.
-         * @return PDOStatement | int - Resultado de la consulta.
+         * @return PDOStatement | int resultado de la consulta.
          */
         public static function consulta(string $sql): PDOStatement | int{
             try{
@@ -40,7 +40,7 @@
         }
 
         /**
-         * Devuelve el número de filas afectadas por la última consulta INSERTAR, ACTUALIZAR, REEMPLAZAR o ELIMINAR
+         * Devuelve el número de filas afectadas por la última consulta.
          * @return Número de filas afectadas por la última instrucción SQL.
          */
         public static function getLastAffectedRows(){
