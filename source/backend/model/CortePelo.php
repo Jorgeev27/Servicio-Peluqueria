@@ -36,7 +36,7 @@
          * @param stdClass cP - Objeto que contiene la información del CortePelo.
          * @return CortePelo - Nuevo objeto CortePelo.
          */
-        public static function getProdFromStd(stdClass $cP): CortePelo{
+        public static function getCortePelFromStd(stdClass $cP): CortePelo{
             $cP = new CortePelo();
             foreach($cP as $atributo=>$valor){
                 $cP->$atributo = $valor;

@@ -49,7 +49,7 @@
          * @param array datosEmpleado - Array asociativo con los datos del Empleado.
          * @return Empleado - Objeto de tipo Empleado.
          */
-        public static function getCliFromAssoc(array $datosEmpleado): Empleado{
+        public static function getEmpleFromAssoc(array $datosEmpleado): Empleado{
             $e = new Empleado();
             foreach($datosEmpleado as $atributo=>$valor){
                 $e->$atributo = $valor;
@@ -62,7 +62,7 @@
          * @param stdClass e - Objeto que contiene la información del Empleado.
          * @return Empleado - Nuevo objeto Empleado.
          */
-        public static function getCliFromStd(stdClass $e): Empleado{
+        public static function getEmpleFromStd(stdClass $e): Empleado{
             return new Empleado($e->nombre, $e->apellido1, $e->apellido2, $e->dni, $e->telefonoMovil, $e->nombreUsuarioEmpleado, $e->correoElectronicoEmpleado);
         }
 
