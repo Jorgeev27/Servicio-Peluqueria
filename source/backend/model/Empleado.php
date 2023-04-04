@@ -74,5 +74,4 @@
             return json_encode($this->atributos, JSON_UNESCAPED_UNICODE);
         }
     }
-
 ?>
