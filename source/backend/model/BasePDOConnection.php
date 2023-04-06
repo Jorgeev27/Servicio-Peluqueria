@@ -10,11 +10,10 @@
          */
         public static function getConexion(): PDO{
             try{
-                $conexion = new PDO("mysql:host=localhost;charset=utf8;dbname=serviciopeluqueria");
-                //$conexion = new PDO("sqlite:/var/www/phpdata/productos.sqlite"); //PARA SQLITE
+                $conexion = new PDO('mysql:host='.HOST.';charset=utf8;dbname='.DB_NAME.';username='.USERNAME.';password='.PASS);
                 $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //También se puede omitir
             }catch(PDOException $ex){
-                die("ERROR!! Al establecer conexion con el servidor de base de datos". $ex->getMessage());
+                die("ERROR!! Al establecer conexion con el servidor de base de datos: ".$ex->getMessage());
             }
             return $conexion;
         }

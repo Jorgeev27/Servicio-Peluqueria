@@ -22,19 +22,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="./sobrenosotros.php">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Noticias</a>
+                        <a class="nav-link active" aria-current="page" href="./noticias.php">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Productos</a>
+                        <a class="nav-link active" aria-current="page" href="./productos.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Galería</a>
+                        <a class="nav-link active" aria-current="page" href="./galeria.php">Galería</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="./contacto.php">Contacto</a>
                     </li>
                 </ul>
             </div>
