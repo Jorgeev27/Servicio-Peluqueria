@@ -1,6 +1,7 @@
 <?php
     declare(strict_types = 1);
-    class BaseConnection{
+    require(ROOT_PATH2."/backend/config/config.php");
+    class BasePDOConnection{
         /* Una variable que se utiliza para almacenar el número de filas afectadas por la última consulta. */
         private static $lastAffectedRows;
 
@@ -9,6 +10,7 @@
          * @return conexion - PDO la conexión a la base de datos.
          */
         public static function getConexion(): PDO{
+            $conexion = null;
             try{
                 $conexion = new PDO('mysql:host='.HOST.';charset=utf8;dbname='.DB_NAME.';username='.USERNAME.';password='.PASS);
                 $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //También se puede omitir
@@ -16,6 +18,7 @@
                 die("ERROR!! Al establecer conexion con el servidor de base de datos: ".$ex->getMessage());
             }
             return $conexion;
+            
         }
 
         /**
