@@ -1,7 +1,6 @@
 <?php
     declare(strict_types = 1);
     require("../backend/config/config.php");
-    require_once("../.htaccess");
     require_once("../backend/model/BasePDOConnection.php");
 ?>
 <!DOCTYPE html>
