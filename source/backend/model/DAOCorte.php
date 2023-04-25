@@ -6,7 +6,7 @@
     require_once("./TipoCorte.php");
     class DAOCorte{
         public static function consulta(string $sql): PDOStatement | int{
-            return BaseConnection::consulta($sql, DB_NAME, "mysql", DB_NAME, PASS);
+            return BasePDOConnection::consulta($sql, DB_NAME, "mysql", PASS);
         }
 
         public static function comprobarUsuario(string $usuario, string $password){

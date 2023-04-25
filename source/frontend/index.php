@@ -1,7 +1,8 @@
 <?php
     declare(strict_types = 1);
     require("../backend/config/config.php");
-    require_once(ROOT_PATH2."/backend/model/BasePDOConnection.php");
+    require_once("../.htaccess");
+    require_once("../backend/model/BasePDOConnection.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,12 +56,14 @@
                                     <div id="login-container">
                                         <div id="login">
                                             <h3 class="text-center">Inicio de sesión</h3>
-                                            <form id="loginform">
-                                                <label for="nombreDeUsuario" class="form">Nombre de usuario:</label>
-                                                <input type="text" class="form" id="nombreDeUsuario">
-                                                <br/><br/>
-                                                <label for="contrasenaInicio" class="form">Contraseña:</label>
-                                                <input type="password" class="form" id="contrasenaInicio">
+                                            <form action="" method="post" enctype="multipart/form-data" id="loginForm">
+                                                    <label for="user" class="form">Nombre de usuario:</label>
+                                                    <input type="text" class="form" id="user" name="user" required="required">
+                                                    <br/><br/>
+                                                    <label for="password" class="form">Contraseña:</label>
+                                                    <input type="password" class="form" id="password" name="password" required="required">
+                                                    <br/><br/>
+                                                <button type="submit" id="entrar" name="entrar" class="btn btn-success w-100">Entrar</button>
                                             </form>
                                         </div>
                                     </div>
@@ -68,33 +71,34 @@
                                     <div id="register-container">
                                         <div id="register">
                                             <h3 class="text-center">Registro de usuario</h3>
-                                            <form id="registerform">
+                                            <form method="post" enctype="multipart/form-data" id="registerform" class="d-grid justify-content-center">
                                                 <label for="nombre" class="form">Nombre:</label>
-                                                <input type="text" class="form" id="nombre">
-                                                <br/><br/>
+                                                <input type="text" class="form" id="nombre" required="required">
+                                                <br/>
                                                 <label for="apellido1" class="form">Primer Apellido:</label>
-                                                <input type="text" class="form" id="apellido1">
-                                                <br/><br/>
+                                                <input type="text" class="form" id="apellido1" required="required">
+                                                <br/>
                                                 <label for="apellido2" class="form">Segundo Apellido:</label>
-                                                <input type="text" class="form" id="apellido2">
-                                                <br/><br/>
+                                                <input type="text" class="form" id="apellido2" required="required">
+                                                <br/>
                                                 <label for="dniUsuario" class="form">DNI:</label>
-                                                <input type="text" class="form" id="dniUsuario">
-                                                <br/><br/>
+                                                <input type="text" class="form" id="dniUsuario" required="required">
+                                                <br/>
                                                 <label for="telefonoMovil" class="form">Teléfono móvil:</label>
-                                                <input type="text" class="form" id="telefonoMovil">
-                                                <br/><br/>
+                                                <input type="text" class="form" id="telefonoMovil" required="required">
+                                                <br/>
                                                 <label for="nombreUsuario" class="form">Nombre Usuario:</label>
-                                                <input type="text" class="form" id="nombreUsuario">
-                                                <br/><br/>
+                                                <input type="text" class="form" id="nombreUsuario" required="required">
+                                                <br/>
                                                 <label for="correoElectronico" class="form">Correo Electrónico:</label>
-                                                <input type="email" class="form" id="correoElectronico">
+                                                    <input type="email" class="form" id="correoElectronico" required="required">
+                                                <br/>
+                                                <button type="submit" class="btn btn-success" title="registrar" name="registrar" id="registrar">Registrarse</button>
                                             </form>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-success" title="Ingresar" name="Ingresar">Login</button>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
@@ -112,6 +116,7 @@
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
