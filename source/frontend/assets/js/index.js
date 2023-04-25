@@ -5,8 +5,7 @@ const loginLink = document.querySelector("#login-link");
 let modalBody = document.getElementById("modalBody");
 
 onload = () =>{
-
-modalBody.style.display="none";
+  modalBody.style.display="none";
 }
 
 registerLink.addEventListener("click", () => {
@@ -20,23 +19,15 @@ registerLink.addEventListener("click", () => {
     registerContainer.style.display = "none";
     loginContainer.style.display = "block";
   });
-
-
- /*$(document).ready(function(){
-  })*/
-
-/*   $("#registrar").click(function (e) { */
   
 /* const formulario = document.getElementById("registrar");
 
 formulario.addEventListener("submit", (e) => { */
 $("#registrar").click(function (event) {
     event.preventDefault(); // evita que el formulario se envíe de forma convencional
-   
 /*      if (!validarFormulario()) {
       return ;
   } */
- 
     let form = new FormData(registerform);
     let clearForm=document.getElementById("registerform");
     let opc = {
@@ -58,29 +49,3 @@ $("#registrar").click(function (event) {
         } */
       });
   });
-
-/* $(document).ready(function() {
-	$('#registerform').on('submit', function(event) {
-	  event.preventDefault();
-	  
-	  // Obtener los datos del formulario
-	  var formData = $(this).serialize();
-	  
-	  // Enviar los datos del formulario al servidor usando AJAX
-	  $.ajax({
-		url: '../../../backend/model/Procesar.php',
-		type: 'POST',
-		data: formData,
-		success: function(response) {
-		  // Manejar la respuesta del servidor aquí
-		  console.log(response);
-		  alert('¡Registro exitoso!');
-		},
-		error: function(jqXHR, textStatus, errorThrown) {
-		  // Manejar el error aquí
-		  console.error(errorThrown);
-		  alert('Ocurrió un error al procesar el registro');
-		}
-	  });
-	});
-  }); */
