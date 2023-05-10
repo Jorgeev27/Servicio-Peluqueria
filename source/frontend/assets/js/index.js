@@ -19,33 +19,26 @@ registerLink.addEventListener("click", () => {
     registerContainer.style.display = "none";
     loginContainer.style.display = "block";
   });
-  
-/* const formulario = document.getElementById("registrar");
 
-formulario.addEventListener("submit", (e) => { */
-$("#registrar").click(function (event) {
+
+  $("#registrar").click(function (event) {
     event.preventDefault(); // evita que el formulario se envíe de forma convencional
-/*      if (!validarFormulario()) {
-      return ;
-  } */
     let form = new FormData(registerform);
     let clearForm=document.getElementById("registerform");
     let opc = {
-        method: 'POST',            
-        body: form
+      method: 'POST',            
+      body: form
     };       
-    fetch('../../../backend/model/Procesar.php',opc)
+    fetch('http://localhost/Servicio-Peluqueria/source/backend/model/Procesar.php',opc)
       .then(res => res.text())
-	console.log(res)
       .then(function(data) {
-        console.log(data);
-        /* if (data === 'usuario_existente') {
+        if (data === 'usuario_existente') {
           alert("El usuario ya existe. Por favor, inicia sesión.");
           clearForm.reset();
-          window.location.href='login.php';
-        } else {
+          window.location.href='http://localhost/Servicio-Peluqueria/source/frontend/index.php';
+        }else{
           clearForm.reset();
-          window.location.href='paginas/panel.php';
-        } */
+          window.location.href='http://localhost/Servicio-Peluqueria/source/frontend/Producto.php';
+        }
       });
   });
