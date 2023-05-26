@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-12 mt-4">
+            <h3 class="text-center">Registro de Usuario</h3>
+            <form action="" method="post" enctype="multipart/form-data" id="registerForm">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingNombre" placeholder="Jorge">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingApellido" placeholder="Escobar">
+                    <label for="floatinginput">Apellido</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingDni" placeholder="12345678Z">
+                    <label for="floatingInput">DNI</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="jorge@gmail.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingMovil" placeholder="123456789">
+                    <label for="floatingInput">Teléfono Móvil</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="1q2w3e..">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+                <p class="nologin mt-3">¿Ya tienes una cuenta? <a routerLink="/login" class="alert-link">Inicia Sesión.</a></p>
+                <button type="submit" id="register" name="registro" class="btn btn-danger">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</div>
