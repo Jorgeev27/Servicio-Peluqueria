@@ -14,14 +14,6 @@
     $usuarios = new Usuarios();
 
     switch ($_SERVER['REQUEST_METHOD']) {
-        /* case 'GET':
-            if (isset($_GET['email'])) {
-                echo json_encode($usuarios->getWhere($_GET['email']));
-            } else {
-                echo json_encode($usuarios->getAll());
-            }
-            break; 
-        */
         case 'GET':
             if (isset($_GET['email'])) {
                 $correoUsuario = $_GET['email'];
@@ -37,28 +29,6 @@
                 echo json_encode($usuarios->getAll());
             }
             break;
-    /*  case 'POST':
-            $datos = json_decode(file_get_contents('php://input'));
-            if ($datos != NULL) {
-                $nombre = $datos->nombre;
-                $apellido = $datos->apellido;
-                $movil = $datos->movil;
-                $dni = $datos->dni;
-                $email = $datos->email;
-                $id_rol = $datos->id_rol;
-                $pass = $datos->pass;
-                // Encriptar la contraseña antes de insertarla
-                $pass_encriptado = password_hash($pass, PASSWORD_DEFAULT);
-                if ($usuarios->insert($nombre, $apellido, $movil, $dni, $email, $id_rol, $pass_encriptado)) {
-                    http_response_code(200);
-                } else {
-                    http_response_code(400);
-                }
-            } else {
-                http_response_code(405);
-        }
-        break; 
-        */
         case 'POST':
             $datos = json_decode(file_get_contents('php://input'));
             if ($datos != NULL) {

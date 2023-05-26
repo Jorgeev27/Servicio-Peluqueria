@@ -16,7 +16,6 @@
         case 'GET':
             if (isset($_GET['identificador'])) {
                 $identificador = $_GET['identificador'];
-                /* $usuario = $usuarios->verificarUsuario($contrasena, $correoUsuario); */
                 if ($corte) {
                     echo json_encode($corte->getWhere($identificador));
                 } else {
@@ -30,10 +29,8 @@
         case 'POST':
             $datos = json_decode(file_get_contents('php://input'));
             if ($datos != NULL) {
-                // Primero verificamos si la mascota ya existe en la base de datos
                 $corte_existente = $mascotas->existeCorte($datos->identificador);
                 if ($corte_existente) {
-                    // Si la mascota ya existe, devolvemos un error
                     http_response_code(409);
                     echo json_encode(array("mensaje" => "El corte de pelo ya existe en la base de datos"));
                 } else {
