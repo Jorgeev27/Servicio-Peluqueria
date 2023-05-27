@@ -1,1 +1,25 @@
-<p>galeria works!</p>
+<div class="container">
+    <div class="row py-3">
+        <div class="col-12 col-md-12 col-lg-12">
+            <h2 class="text-center text-black text-decoration-underline fw-bold">Últimas fotos</h2>
+        </div>
+    </div>
+    <div class="row mt-3 row-cols-1 row-cols-md-2 g-4">
+        <div class="col-12 col-md-6 col-lg-4 mt-4" *ngFor="let item of galeriaCortes">
+            <div class="card-container">
+                <div class="card">
+                    <div class="img-content">
+                        <img src="../../../assets/imgMock/{{item.nombre | lowercase}}.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="content">
+                        <p class="heading">{{item.nombre}}</p>
+                        <p class="text-black">{{item.descripcion}}</p>
+                        <p class="text-black">{{item.precio}}€</p>
+                        <p class="text-black">{{item.tipocorte}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
