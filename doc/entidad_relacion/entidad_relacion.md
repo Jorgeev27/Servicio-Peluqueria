@@ -11,15 +11,19 @@
 <div align="justify">
   La aplicación del servicio de peluquería cuenta con las siguientes tablas de Base de Datos con sus respectivos atributos:
 
-  - Empleados: ID_Empleado(Primary Key), Nombre_Empleado, NombreUsuario_Empleado, Apellido1, Apellido2, DNI, CorreoElectronico_Empleado.
+  - Empleado: id (Primary Key), nombre, apellido, dni, movil, email, id_rol (Foreign Key), pass.
 
-  - Cliente: ID_Cliente(Primary Key), Nombre_Cliente, NombreUsuario_Cliente, Apellido1, Apellido2, DNI, CorreoElectronico_Cliente, Telefono_movil.
+  - Roles: id_rol (Primary Key), rol.
 
-  - CitaCorte: Fecha(Primary Key), Hora, ID_Cliente(Foreign Key), Nombre_Cliente, ID_CortePelo(Foreign Key), Nombre_CortePelo, Precio_CortePelo, ID_TipoCorte(Foreign Key), Nombre_TipoCorte.
+  - Clientes: id (Primary Key), nombre, apellido, dni, email, movil, id_rol (Foreign Key).
 
-  - CortePelo: ID_CortePelo(Primary Key), Nombre_CortePelo, Precio_CortePelo, ID_TipoCorte(Foreign Key), Nombre_TipoCorte.
+  - Cita: id_cita (Primary Key), hora, fecha, id_cliente (Foreign Key), id_tipocorte (Foreign Key), id_corte (Foreign Key).
 
-  - TipoCorte: ID_TipoCorte(Primary Key), Nombre_TipoCorte, ID_CortePelo(Foreign Key), Nombre_CortePelo.
+  - Usuarios: id (Primary Key), nombre, apellido, dni, email, movil, id_rol (Foreign Key), pass.
+
+  - Corte: id(Primary Key), nombre, descripcion, precio, id_tipocorte (Foreign Key).
+
+  - Tipo_Corte: id_tipocorte(Primary Key), nombre.
 </div>
   
 ## **3. Entidad-Relación con las Bases de Datos**<a name="id3"></a>

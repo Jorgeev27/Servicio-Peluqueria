@@ -38,11 +38,9 @@
 <div align="justify">
   Para el prototipo del proyecto, he llevado a cabo las siguientes características para que esta apliación esté en funcionamiento:
   
-  - En el lado del Backend, contará con PHP que se conecta a una base de datos (que se hablará más adelante).
+  - En el lado del Backend, contará con API en PHP que se conecta a una base de datos.
   
   - En el lado del Frontend, contará con Javascript.
-  
-  - En el lado de la base de datos, que a su vez estará conectada con el Backend (PHP), contará a través de MySQL.
   
   ![](https://github.com/Jorgeev27/Servicio-Peluqueria/blob/main/doc/anteproyecto/img/Prototipo.png)
 </div>
