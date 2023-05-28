@@ -9,8 +9,6 @@
 1. [Índice](#id1)<br>
 2. [Backend](#id2)<br>
 3. [Frontend](#id3)<br>
-4. [Diagrama de Clases](#id4)<br>
-4. [Entidad-Relación](#id5)<br>
 
 ## **2. Backend**<a name="id2"></a>
 <div align="justify">
