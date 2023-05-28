@@ -21,7 +21,7 @@
 
   - Usuarios: id (Primary Key), nombre, apellido, dni, email, movil, id_rol (Foreign Key), pass.
 
-  - Corte: id(Primary Key), nombre, descripcion, precio, id_tipocorte (Foreign Key).
+  - Corte: id (Primary Key), nombre, descripcion, precio, id_tipocorte (Foreign Key).
 
   - Tipo_Corte: id_tipocorte(Primary Key), nombre.
 </div>
