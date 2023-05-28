@@ -23,7 +23,7 @@
 
   - Corte: id (Primary Key), nombre, descripcion, precio, id_tipocorte (Foreign Key).
 
-  - Tipo_Corte: id_tipocorte(Primary Key), nombre.
+  - Tipo_Corte: id_tipocorte (Primary Key), nombre.
 </div>
   
 ## **3. Entidad-Relación con las Bases de Datos**<a name="id3"></a>
