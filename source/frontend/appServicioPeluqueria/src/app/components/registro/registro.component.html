@@ -1,36 +1,43 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-12 col-lg-12 mt-4">
-            <h3 class="text-center">Registro de Usuario</h3>
-            <form action="" method="post" enctype="multipart/form-data" id="registerForm">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingNombre" placeholder="Jorge">
-                    <label for="floatingInput">Nombre</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingApellido" placeholder="Escobar">
-                    <label for="floatinginput">Apellido</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingDni" placeholder="12345678Z">
-                    <label for="floatingInput">DNI</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="jorge@gmail.com">
-                    <label for="floatingInput">Email</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingMovil" placeholder="123456789">
-                    <label for="floatingInput">Teléfono Móvil</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="1q2w3e..">
-                    <label for="floatingPassword">Contraseña</label>
-                </div>
-                <p class="nologin mt-3">¿Ya tienes una cuenta? <a routerLink="/login" class="alert-link">Inicia Sesión.</a></p>
-                <button type="submit" id="register" name="registro" class="btn btn-danger">Registrarse</button>
-            </form>
+          <h3 class="text-center">Registro de Usuario</h3>
+          <form class="mt-4" [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+            <div class="form-floating mb-4">
+              <input type="text" formControlName="nombre" class="form-control" id="floatingNombre" name="nombre" placeholder="Jorge" required>
+              <label for="floatingNombre">Nombre</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="text" formControlName="apellido" class="form-control" id="floatingApellido" name="apellido" placeholder="Escobar" required>
+              <label for="floatingApellido">Apellido</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="text" formControlName="dni" class="form-control" id="floatingDni" name="dni" placeholder="12345678Z" required>
+              <label for="floatingDni">DNI</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="email" formControlName="email" class="form-control" id="floatingEmail" name="email" placeholder="jorge@gmail.com" required>
+              <label for="floatingEmail">Email</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="text" formControlName="movil" class="form-control" id="floatingMovil" name="movil" placeholder="666666666" required>
+              <label for="floatingMovil">Móvil</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="text" formControlName="id_rol" class="form-control" id="floatingRol" name="rol" placeholder="1" required>
+              <label for="floatingRol">ID Rol</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="password" formControlName="pass" class="form-control" id="floatingPassword" name="password" placeholder="123456" required>
+              <label for="floatingPassword">Contraseña</label>
+            </div>
+            <p class="nologin mt-3">¿Ya estás registrado? <a class="alert-link" routerLink="/login">Inicia Sesión.</a></p>
+            <div class="mt-4">
+              <button class="btn btn-danger" type="submit" [disabled]="registroForm.invalid">Registrar</button>
+            </div>
+            <div *ngIf="mensaje">{{ mensaje }}</div>
+          </form>
         </div>
     </div>
 </div>
-<br/><br/><br/><br/><br/>
+<br/>
