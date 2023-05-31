@@ -1,39 +1,25 @@
-<main>
-  <div class="row mt-4">
-    <div class="col">
-        <button type="button" class="btn btn-danger mx-4" routerLink="/productos">Atrás</button>
+<div class="container">
+  <h1>Crear Corte de Pelo</h1>
+  <form (ngSubmit)="registrarCorte()" #corteForm="ngForm">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="corte.nombre" required>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-12 col-lg-12 mt-4">
-        <h3 class="text-center">Registrar un nuevo corte de pelo</h3>
-        <form>
-          <div *ngIf="mensaje">
-            {{ mensaje }}
-          </div>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="nombre floatingInput" [(ngModel)]="corte.nombre" name="nombre" placeholder="Nombre del corte" required>
-            <label for="floatingNombre">Nombre</label>
-          </div>
-          <div class="form-floating mb-3">
-            <textarea id="descripcion floatingTextarea" [(ngModel)]="corte.descripcion" placeholder="Descripción del corte" class="form-control"></textarea>
-            <label for="floatingTextarea">Descripción</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="number" class="form-control" id="precio floatingInput" [(ngModel)]="corte.precio" name="precio" placeholder="Precio del corte" required>
-            <label for="floatingPrecio">Precio</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="id_tipo_corte floatingInput" [(ngModel)]="corte.id_tipo_corte" name="id_tipo_corte" placeholder="Tipo del corte" required>
-            <label for="floatingTipoCorte">Tipo Corte</label>
-          </div>
-          <div class="mt-4">
-            <button class="btn btn-danger" (click)="registrarCorte()">Registrar</button>
-          </div>
-        </form>
-      </div>
+    <div class="mb-3">
+      <label for="descripcion" class="form-label">Descripción</label>
+      <textarea class="form-control" id="descripcion" name="descripcion" [(ngModel)]="corte.descripcion" required></textarea>
     </div>
-  </div>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-</main>
+    <div class="mb-3">
+      <label for="precio" class="form-label">Precio</label>
+      <input type="number" class="form-control" id="precio" name="precio" [(ngModel)]="corte.precio" required>
+    </div>
+    <div class="mb-3">
+      <label for="id_tipo_corte" class="form-label">Tipo de Corte</label>
+      <select class="form-control" id="id_tipo_corte" name="id_tipo_corte" [(ngModel)]="corte.id_tipocorte" required>
+        <option value="">Seleccione un tipo de corte</option>
+        <option *ngFor="let tipoCorte of tiposCorte" [value]="tipoCorte.id_tipo_corte">{{ tipoCorte.nombre }}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+  </form>
+</div>

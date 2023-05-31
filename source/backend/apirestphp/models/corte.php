@@ -25,7 +25,7 @@
         }
 
         function getWhere($id_corte): array{
-            $consulta = "SELECT * FROM corte WHERE id_corte = '$id_corte'";
+            $consulta = "SELECT * FROM corte WHERE nombre = '$id_corte'";
             $datos = $this->sentenciaOtenerTodosValores($consulta);
             return $datos;
         }
@@ -48,8 +48,8 @@
             return $datos;
         }
 
-        function existeCorte($id_corte){
-            $consulta = "SELECT * FROM corte WHERE id_corte = '$id_corte'";
+        function existeCorte($nombre){
+            $consulta = "SELECT * FROM corte WHERE id_corte = '$nombre'";
             $datos = $this->sentenciaOtenerTodosValores($consulta);
             return $datos;
         }

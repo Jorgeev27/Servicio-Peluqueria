@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Cortes } from '../model/cortesPelo';
 
 @Injectable({
   providedIn: 'root'
@@ -21,15 +22,14 @@ export class CortesPeloService {
     return this.http.get<any>(url);
   }
 
-  // Registrar un nuevo corte de pelo
-  registrarCorte(corte: any): Observable<any> {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
-    return this.http.post<any>(this.apiURL, corte, httpOptions);
+  // Registrar un nuevo corte de pel
+  createCorte(corte: Cortes): Observable<any> {
+    const body = { corte: corte };
+    return this.http.post<any>(this.apiURL, body);
   }
+  
+  
+  
 
   getCorteById(identificador: number): Observable<any> {
     return this.http.get<any>(`${this.apiURL}?identificador=${identificador}`);
