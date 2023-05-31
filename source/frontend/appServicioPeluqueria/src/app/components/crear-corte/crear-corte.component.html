@@ -1,0 +1,25 @@
+<div>
+  <h2>Registrar un nuevo corte de pelo</h2>
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" [(ngModel)]="corte.nombre" placeholder="Nombre del corte">
+  </div>
+  <div>
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" [(ngModel)]="corte.descripcion" placeholder="Descripción del corte"></textarea>
+  </div>
+  <div>
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" [(ngModel)]="corte.precio" placeholder="Precio del corte">
+  </div>
+  <div>
+    <label for="id_tipo_corte">ID Tipo Corte:</label>
+    <input type="text" id="id_tipo_corte" [(ngModel)]="corte.id_tipo_corte" placeholder="ID del tipo de corte">
+  </div>
+  <div>
+    <button (click)="registrarCorte()">Registrar</button>
+  </div>
+  <div *ngIf="mensaje">
+    {{ mensaje }}
+  </div>
+</div>

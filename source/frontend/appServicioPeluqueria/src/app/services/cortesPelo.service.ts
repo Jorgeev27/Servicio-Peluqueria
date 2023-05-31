@@ -10,16 +10,29 @@ export class CortesPeloService {
 
   constructor(private http: HttpClient) { }
 
+  // Obtener todos los cortes de pelo
   getCortes(): Observable<any> {
     return this.http.get<any>(this.apiURL);
   }
 
-  getCorteById(identificador: number): Observable<any> {
-    return this.http.get<any>(`${this.apiURL}?identificador=${identificador}`);
+  // Obtener un corte de pelo por identificador
+  getCorte(identificador: string): Observable<any> {
+    const url = `${this.apiURL}?identificador=${identificador}`;
+    return this.http.get<any>(url);
   }
 
-  insertCorte(corteData: any): Observable<any> {
-    return this.http.post<any>(this.apiURL, corteData);
+  // Registrar un nuevo corte de pelo
+  registrarCorte(corte: any): Observable<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.post<any>(this.apiURL, corte, httpOptions);
+  }
+
+  getCorteById(identificador: number): Observable<any> {
+    return this.http.get<any>(`${this.apiURL}?identificador=${identificador}`);
   }
 
   updateCorte(corteData: any): Observable<any> {

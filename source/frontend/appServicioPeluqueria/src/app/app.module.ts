@@ -20,6 +20,9 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { MetodoPagoComponent } from './components/metodo-pago/metodo-pago.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CrearTipoCorteComponent } from './components/crear-tipo-corte/crear-tipo-corte.component';
+import { CrearCorteComponent } from './components/crear-corte/crear-corte.component';
+import { CortesPeloService } from './services/cortesPelo.service';
 
 
 @NgModule({
@@ -38,6 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegistroComponent,
     MetodoPagoComponent,
     FooterComponent,
+    CrearTipoCorteComponent,
+    CrearCorteComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FullCalendarModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CortesPeloService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

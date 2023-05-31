@@ -1,0 +1,12 @@
+<h2>Registro de nuevo tipo de corte de pelo</h2>
+
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+
+<div>
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" [(ngModel)]="nombreTipoCorte" name="nombre" required>
+</div>
+
+<button (click)="registrarTipoCorte()">Registrar</button>

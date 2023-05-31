@@ -5,7 +5,7 @@
     class Corte{
         function insert($nombre, $descripcion, $precio){
             try {
-                $consultaInsertar = "INSERT INTO corte (nombre,descripcion,precio) VALUES (:nombre,:descripcion,:precio)";
+                $consultaInsertar = "INSERT INTO corte (nombre, descripcion, precio) VALUES (:nombre, :descripcion, :precio)";
                 $conexion = new ConexionBD();
                 $stmt = $conexion::Conexion()->prepare($consultaInsertar);
                 $stmt->bindParam(':nombre', $nombre);
@@ -36,20 +36,14 @@
             return $datos;
         }
 
-        function ultimoInsert(){
-            $consulta = "SELECT * FROM corte ORDER BY id_corte DESC LIMIT 1;";
-            $datos = $this->sentenciaOtenerTodosValores($consulta);
-            return $datos;
-        }
-
         function delete($id_corte){
             $consulta = "DELETE FROM corte WHERE id_corte = '$id_corte'";
             $datos = $this->sentenciaOtenerTodosValores($consulta);
             return $datos;
         }
 
-        function update($id_corte, $nombre, $descripcion, $precio, $id_tipo_corte){
-            $consulta = "UPDATE corte SET NOMBRE = '$nombre', DESCRIPCION = '$descripcion', PRECIO = '$precio', ID_TIPO_CORTE = '$id_tipo_corte' WHERE id_corte = '$id_corte'";
+        function update($id_corte, $nombre, $descripcion, $precio){
+            $consulta = "UPDATE corte SET nombre = '$nombre', descripcion = '$descripcion', precio = '$precio' WHERE id_corte = '$id_corte'";
             $datos = $this->sentenciaOtenerTodosValores($consulta);
             return $datos;
         }

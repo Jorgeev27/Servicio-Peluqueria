@@ -22,8 +22,8 @@
             return $datos;
         }
 
-        function getWhere($nombre){
-            $consulta = "SELECT * FROM tipo_corte WHERE nombre = '$nombre'";
+        function getWhere($id_tipo_corte){
+            $consulta = "SELECT * FROM tipo_corte WHERE nombre = '$id_tipo_corte'";
             $datos = $this->sentenciaOtenerTodosValores($consulta);
             return $datos;
         }

@@ -10,6 +10,8 @@ import { MetodoPagoComponent } from './components/metodo-pago/metodo-pago.compon
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { CitaCalendarioComponent } from './components/cita-calendario/cita-calendario.component';
+import { CrearTipoCorteComponent } from './components/crear-tipo-corte/crear-tipo-corte.component';
+import { CrearCorteComponent } from './components/crear-corte/crear-corte.component';
 
 
 
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path: 'metodoPago', component: MetodoPagoComponent},
   {path: 'galeria', component: GaleriaComponent},
   {path: 'contacto', component: ContactoComponent},
-  {path: 'cita', component: CitaCalendarioComponent}
+  {path: 'cita', component: CitaCalendarioComponent},
+  {path: 'crearTipoCorte', component: CrearTipoCorteComponent},
+  {path: 'crearCorte', component: CrearCorteComponent}
 ];
 
 @NgModule({
