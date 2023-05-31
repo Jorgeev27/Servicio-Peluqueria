@@ -29,7 +29,7 @@
         case 'POST':
             $datos = json_decode(file_get_contents('php://input'));
             if ($datos != NULL) {
-                $corte_existente = $mascotas->existeCorte($datos->identificador);
+                $corte_existente = $corte->existeCorte($datos->identificador);
                 if ($corte_existente) {
                     http_response_code(409);
                     echo json_encode(array("mensaje" => "El corte de pelo ya existe en la base de datos"));

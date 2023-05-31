@@ -39,7 +39,7 @@ export class CortesPeloService {
     return this.http.put<any>(this.apiURL, corteData);
   }
 
-  deleteCorte(idCorte: number): Observable<any> {
-    return this.http.delete<any>(`${this.apiURL}?id_corte=${idCorte}`);
+  deleteCorte(id: number): Observable<any> {
+    return this.http.delete<any>(`${this.apiURL}?id_corte=${id}`);
   }
 }

@@ -1,5 +1,5 @@
 export class Cortes{
-    public id!: number;
+    public id_corte!: number;
     public nombre!: string;
     public descripcion!: string;
     public precio!: number;

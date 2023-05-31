@@ -11,6 +11,7 @@ import { TipoCortesService } from 'src/app/services/tipoCortes.service';
   styleUrls: ['./cortes-pelo.component.css']
 })
 export class CortesPeloComponent implements OnInit {
+  idCorte!: number;
   cortes: Cortes[] = [];
   tipoCorteSeleccionado!: TipoCortes ;
   cortesFiltrados: Cortes[] = [];
@@ -44,6 +45,20 @@ export class CortesPeloComponent implements OnInit {
       this.cortesFiltrados = this.cortes;
     }
   }
+
+  borrarCorte(corte: Cortes): void {
+    console.log(corte.id_corte); // Verificar el valor del id_corte
+    this.cortesService.deleteCorte(corte.id_corte).subscribe(
+      response => {
+        console.log(response); // Verificar la respuesta del servidor
+        // Resto del código para manejar la respuesta del servidor
+      },
+      error => {
+        console.error('Error al borrar el corte de pelo:', error);
+      }
+    );
+  }
+  
 
   navegarReserva() {
     this.router.navigate(['/metodoPago']);
