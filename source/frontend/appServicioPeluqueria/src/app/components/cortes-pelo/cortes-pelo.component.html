@@ -1,24 +1,24 @@
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-12 col-lg-12 mt-4">
-      <select class="form-select" [(ngModel)]="selectedTipoCorte" (change)="filtrarCortesPorTipo()">
+      <select class="form-select" [(ngModel)]="tipoCorteSeleccionado" (change)="filtrarCortesPorTipo()">
         <option selected value="">Todos los cortes</option>
-        <option *ngFor="let option of tipoCorte" [ngValue]="option">{{ option.nombre }}</option>
+        <option *ngFor="let option of tiposCorte" [ngValue]="option">{{ option.nombre }}</option>
       </select>
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-md-6 col-lg-4 mt-4" *ngFor="let item of cortesFiltrados">
+    <div class="col-12 col-md-6 col-lg-4 mt-4" *ngFor="let corte of cortesFiltrados">
       <div class="card-container">
         <div class="card">
           <div class="img-content">
-            <img src="../../../assets/img/{{item.nombre | lowercase}}.jpg" alt="" style="width: 100%;">
+            <img [src]="'../../../assets/img/' + corte.nombre.toLowerCase() + '.jpg'" alt="" style="width: 100%;">
           </div>
           <div class="content">
-            <p class="heading">{{item.nombre}}</p>
-            <p class="text-black">{{item.descripcion}}</p>
-            <p class="text-black">{{item.precio}}€</p>
-            <p class="text-black">{{item.id_tipocorte | tipoCortesPelo}}</p>
+            <p class="heading">{{ corte.nombre }}</p>
+            <p class="text-black">{{ corte.descripcion }}</p>
+            <p class="text-black">{{ corte.precio }}€</p>
+            <p class="text-black">{{ corte.id_tipocorte | tipoCortesPelo }}</p>
           </div>
         </div>
       </div>

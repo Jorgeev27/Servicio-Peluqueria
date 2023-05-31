@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UsuariosService } from 'src/app/services/usuario.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registro',
@@ -31,7 +32,13 @@ export class RegistroComponent {
     const usuario = this.registroForm.value;
     this.usuariosService.registrarUsuario(usuario).subscribe(
       () => {
-        this.mensaje = 'Registro exitoso';
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Your work has been saved',
+          showConfirmButton: false,
+          timer: 1500
+        })
         this.registroForm.reset();
       },
       error => {

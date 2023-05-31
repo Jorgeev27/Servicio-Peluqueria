@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Cortes } from 'src/app/model/cortesPelo';
 import { TipoCortes } from 'src/app/model/tipoCortes';
 import { CortesPeloService } from 'src/app/services/cortesPelo.service';
+import { TipoCortesService } from 'src/app/services/tipoCortes.service';
 
 @Component({
   selector: 'app-cortes-pelo',
@@ -10,44 +11,41 @@ import { CortesPeloService } from 'src/app/services/cortesPelo.service';
   styleUrls: ['./cortes-pelo.component.css']
 })
 export class CortesPeloComponent implements OnInit {
-  corte: Cortes[] = [];
-  tipoCorte: TipoCortes[] = [];
-  selectedTipoCorte!: TipoCortes;
+  cortes: Cortes[] = [];
+  tipoCorteSeleccionado!: TipoCortes ;
   cortesFiltrados: Cortes[] = [];
+  tiposCorte: TipoCortes[] = [];
 
-  constructor(private cortesService: CortesPeloService, private router: Router) { }
+  constructor(private cortesService: CortesPeloService, private router: Router, private tipoCortesService: TipoCortesService) { }
 
   ngOnInit(): void {
     this.cargarCortes();
-    this.cargarTipoCortes();
-    this.cortesFiltrados = this.corte; // Inicialmente, mostrar todos los cortes
+    this.getTiposCorte();
   }
 
   cargarCortes() {
-    this.cortesService.obtenerCortes().subscribe(corte => {
-      this.corte = corte;
-      this.cortesFiltrados = corte; // Actualizar cortes filtrados al cargar los cortes
+    this.cortesService.getCortes().subscribe(cortes => {
+      this.cortes = cortes;
+      this.filtrarCortesPorTipo();
     });
   }
 
-  cargarTipoCortes() {
-    this.cortesService.obtenerTipoCortes().subscribe(tipoCorte => {
-      this.tipoCorte = tipoCorte.map((item: any) => ({
-        id_tipo_corte: item.id_tipo_corte,
-        nombre: item.nombre
-      }));
-    });
+  getTiposCorte(): void {
+    this.tipoCortesService.getAllTiposCorte()
+      .subscribe(data => {
+        this.tiposCorte = data;
+      });
   }
 
-  filtrarCortesPorTipo() {
-    if (this.selectedTipoCorte) {
-      this.cortesFiltrados = this.corte.filter(corte => corte.id_tipocorte === this.selectedTipoCorte.id_tipo_corte);
+  filtrarCortesPorTipo(): void {
+    if (this.tipoCorteSeleccionado) {
+      this.cortesFiltrados = this.cortes.filter(corte => corte.id_tipocorte === this.tipoCorteSeleccionado.id_tipo_corte);
     } else {
-      this.cortesFiltrados = this.corte;
+      this.cortesFiltrados = this.cortes;
     }
   }
 
   navegarReserva() {
-    this.router.navigate(['/metodoPago']); // Reemplaza '/reserva' con la ruta del componente de reserva correspondiente
+    this.router.navigate(['/metodoPago']);
   }
 }

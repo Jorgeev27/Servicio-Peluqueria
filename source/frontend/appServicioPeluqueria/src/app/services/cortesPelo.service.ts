@@ -1,21 +1,32 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from '@angular/common/http';
-import { Observable} from "rxjs";
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
-    providedIn: 'root',
+  providedIn: 'root'
 })
-
-export class CortesPeloService{
-  url = "http://localhost/Servicio-Peluqueria/source/backend/apirestphp/";
+export class CortesPeloService {
+  private apiURL = 'http://localhost/Servicio-Peluqueria/source/backend/apirestphp/apicorte.php'; // Reemplaza con la URL correcta de tu API
 
   constructor(private http: HttpClient) { }
 
-  obtenerCortes(): Observable<any>{
-    return this.http.get(`${this.url}/apicorte.php`);
+  getCortes(): Observable<any> {
+    return this.http.get<any>(this.apiURL);
   }
 
-  obtenerTipoCortes(): Observable<any>{
-    return this.http.get(`${this.url}/apitipocorte.php`);
+  getCorteById(identificador: number): Observable<any> {
+    return this.http.get<any>(`${this.apiURL}?identificador=${identificador}`);
+  }
+
+  insertCorte(corteData: any): Observable<any> {
+    return this.http.post<any>(this.apiURL, corteData);
+  }
+
+  updateCorte(corteData: any): Observable<any> {
+    return this.http.put<any>(this.apiURL, corteData);
+  }
+
+  deleteCorte(idCorte: number): Observable<any> {
+    return this.http.delete<any>(`${this.apiURL}?id_corte=${idCorte}`);
   }
 }
