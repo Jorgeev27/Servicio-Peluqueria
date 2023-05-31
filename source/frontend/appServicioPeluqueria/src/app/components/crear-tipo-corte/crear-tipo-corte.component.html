@@ -1,12 +1,27 @@
-<h2>Registro de nuevo tipo de corte de pelo</h2>
-
-<div *ngIf="errorMessage" class="error-message">
-  {{ errorMessage }}
-</div>
-
-<div>
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" [(ngModel)]="nombreTipoCorte" name="nombre" required>
-</div>
-
-<button (click)="registrarTipoCorte()">Registrar</button>
+<main>
+  <div class="row mt-4">
+    <div class="col">
+        <button type="button" class="btn btn-danger mx-4" routerLink="/productos">Atrás</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-12">
+        <h3 class="text-center">Registro de nuevo tipo de corte de pelo</h3>
+        <form>
+          <div *ngIf="errorMessage" class="error-message">
+            {{ errorMessage }}
+          </div>
+          <div class="form-floating mt-4 mb-3">
+            <input type="text" class="form-control" id="nombre floatingInput" [(ngModel)]="nombreTipoCorte" name="nombre" required placeholder="name@example.com">
+            <label for="floatingNombre">Nombre</label>
+          </div>
+          <div class="mt-4">
+            <button class="btn btn-danger" (click)="registrarTipoCorte()">Registrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</main>
