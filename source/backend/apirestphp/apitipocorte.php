@@ -1,4 +1,12 @@
 <?php
+    /* Estos son encabezados HTTP que permiten compartir recursos de origen cruzado (CORS) para el
+    servidor web. Especifican qué orígenes pueden acceder a los recursos en el servidor, qué métodos
+    HTTP están permitidos, qué encabezados están permitidos en la solicitud y cuánto tiempo se puede
+    almacenar en caché la solicitud de verificación previa. El encabezado
+    `Access-Control-Allow-Origin: *` permite que cualquier origen acceda a los recursos, mientras
+    que el encabezado `Access-Control-Allow-Credentials: true` permite incluir credenciales en la
+    solicitud. Estos encabezados son necesarios cuando se realizan solicitudes AJAX desde un dominio
+    o puerto diferente al que sirve a la página web. */
     header('Access-Control-Allow-Origin: *');
     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
     header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
@@ -13,6 +21,9 @@
 
     $tipo = new Tipocorte();
 
+    /* Este es un script PHP que maneja solicitudes HTTP para una API REST relacionada con cortes de
+    cabello. Utiliza una declaración de cambio para manejar diferentes métodos HTTP (GET, POST, PUT,
+    DELETE) y realiza diferentes acciones según el método y los datos recibidos. */
     switch ($_SERVER['REQUEST_METHOD']) {
         case 'GET':
             if (isset($_GET['nombre'])) {

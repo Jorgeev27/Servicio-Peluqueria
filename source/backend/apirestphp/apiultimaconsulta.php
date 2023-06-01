@@ -1,4 +1,6 @@
 <?php
+    /* Estos son encabezados HTTP que permiten compartir recursos de origen cruzado (CORS) para la API.
+    Especifican qué orígenes, métodos, encabezados y credenciales pueden acceder a la API. */
     header('Access-Control-Allow-Origin: *');
     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
     header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
@@ -13,6 +15,9 @@
 
     $ultima = new UltimaConsulta();
 
+    /* Este código maneja solicitudes HTTP para una API de PHP. Está utilizando una declaración de
+    cambio para verificar el método de solicitud (GET, POST, PUT, DELETE, OPTIONS) y luego ejecuta
+    un código diferente según el método. */
     switch ($_SERVER['REQUEST_METHOD']) {
         case 'GET':
             if (isset($_GET['id'])) {

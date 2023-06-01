@@ -1,4 +1,12 @@
 <?php
+    /* Estos encabezados se utilizan para habilitar el uso compartido de recursos de origen cruzado
+    (CORS) para la API. CORS es una función de seguridad implementada por los navegadores web para
+    evitar que las páginas web realicen solicitudes a un dominio diferente al que sirve la página
+    web. Al configurar estos encabezados, la API permite solicitudes de cualquier dominio,
+    especifica los métodos HTTP permitidos (GET, POST, PUT, DELETE, OPTIONS), establece los
+    encabezados permitidos y establece la antigüedad máxima de la memoria caché de solicitud de
+    verificación previa. El encabezado "Access-Control-Allow-Credentials" se utiliza para permitir
+    que se envíen cookies con la solicitud. */
     header('Access-Control-Allow-Origin: *');
     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
     header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
@@ -13,6 +21,8 @@
 
     $usuarios = new Usuarios();
 
+    /* Este código implementa una API RESTful para administrar los datos del usuario. Utiliza el método
+    de solicitud HTTP para determinar la acción a realizar. */
     switch ($_SERVER['REQUEST_METHOD']) {
         case 'GET':
             if (isset($_GET['email'])) {

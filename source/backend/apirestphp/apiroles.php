@@ -1,4 +1,11 @@
 <?php
+    /* Estos son encabezados HTTP que permiten compartir recursos de origen cruzado (CORS) para la API.
+    Especifican qué orígenes pueden acceder a la API, qué métodos HTTP están permitidos, qué
+    encabezados están permitidos en la solicitud y cuánto tiempo se puede almacenar en caché la
+    solicitud de verificación previa. El encabezado `Access-Control-Allow-Origin: *` permite que
+    cualquier origen acceda a la API, mientras que el encabezado `Access-Control-Allow-Credentials:
+    true` permite incluir credenciales (como cookies) en la solicitud. Los otros encabezados
+    proporcionan una configuración adicional para CORS. */
     header('Access-Control-Allow-Origin: *');
     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
     header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
@@ -13,6 +20,9 @@
 
     $roles = new Roles();
 
+    /* Este código maneja solicitudes HTTP para una API RESTful relacionada con roles. Utiliza una
+    declaración de cambio para manejar diferentes métodos HTTP (GET, POST, PUT, DELETE) y realiza
+    diferentes acciones basadas en el método. */
     switch ($_SERVER['REQUEST_METHOD']) {
         case 'GET':
             if (isset($_GET['id'])) {
