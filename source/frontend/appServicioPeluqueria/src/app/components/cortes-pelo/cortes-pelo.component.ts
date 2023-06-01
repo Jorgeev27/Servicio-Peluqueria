@@ -75,6 +75,7 @@ export class CortesPeloComponent implements OnInit {
         console.error('Error al borrar el corte de pelo:', error);
       }
     );
+    window.location.reload();
   }
   
 
