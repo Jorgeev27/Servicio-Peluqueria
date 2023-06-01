@@ -7,11 +7,18 @@ import { TipoCortesService } from 'src/app/services/tipoCortes.service';
   styleUrls: ['./crear-tipo-corte.component.css']
 })
 export class CrearTipoCorteComponent {
+/* Estas son propiedades de clase que se inicializan con cadenas vacías. `nombreTipoCorte` se usa para
+almacenar el nombre del tipo de corte de cabello que el usuario desea crear, mientras que
+`errorMessage` se usa para mostrar cualquier mensaje de error que pueda ocurrir durante el proceso
+de creación. */
   nombreTipoCorte: string = '';
   errorMessage: string = '';
 
   constructor(private tipoCorteService: TipoCortesService) { }
 
+  /**
+   * Esta función registra un nuevo tipo de corte de pelo y maneja cualquier error que pueda ocurrir.
+   */
   registrarTipoCorte(): void {
     if (this.nombreTipoCorte) {
       this.tipoCorteService.createTipoCorte(this.nombreTipoCorte).subscribe(

@@ -11,6 +11,7 @@ import { TipoCortesService } from 'src/app/services/tipoCortes.service';
   styleUrls: ['./crear-corte.component.css']
 })
 export class CrearCorteComponent implements OnInit {
+  /* El código está definiendo dos variables `corte` y `tiposCorte`. */
   corte: Cortes = {
     id_corte: 0,
     nombre: '',
@@ -23,10 +24,16 @@ export class CrearCorteComponent implements OnInit {
 
   constructor(private cortesService: CortesPeloService, private router: Router, private tipoCortesService: TipoCortesService) { }
 
+  /**
+   * La función ngOnInit llama a la función getTiposCorte.
+   */
   ngOnInit(): void {
     this.getTiposCorte();
   }
 
+  /**
+   * Esta función recupera todos los tipos de cortes de un servicio y los asigna a una variable.
+   */
   getTiposCorte(): void {
     this.tipoCortesService.getAllTiposCorte()
       .subscribe(data => {
@@ -34,6 +41,10 @@ export class CrearCorteComponent implements OnInit {
       });
   }
 
+  /**
+   * Esta función crea un nuevo "corte" y navega a la página de "productos" luego de una creación
+   * exitosa.
+   */
   registrarCorte(): void {
     this.cortesService.createCorte(this.corte)
       .subscribe(

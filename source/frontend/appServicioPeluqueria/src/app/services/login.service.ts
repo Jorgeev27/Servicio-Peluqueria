@@ -10,6 +10,14 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
+  /**
+   * Esta función envía una solicitud GET a un extremo de la API con parámetros de correo electrónico y
+   * contraseña para autenticar a un usuario.
+   * @param {string} email - Una cadena que representa la dirección de correo electrónico del usuario.
+   * @param {string} password - El parámetro de contraseña es una cadena que representa la contraseña
+   * del usuario.
+   * @returns Se devuelve un Observable de tipo `cualquiera`.
+   */
   login(email: string, password: string): Observable<any> {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json'

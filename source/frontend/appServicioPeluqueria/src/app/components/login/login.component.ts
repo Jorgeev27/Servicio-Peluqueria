@@ -7,12 +7,20 @@ import { LoginService } from 'src/app/services/login.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+/* Estas son declaraciones de propiedades para la clase `LoginComponent`. Declaran tres propiedades:
+`email`, `password` y `errorMessage`, todas las cuales son del tipo `string`. El signo de
+exclamación después de cada nombre de propiedad indica que las propiedades no aceptan valores NULL,
+lo que significa que no pueden ser NULL o indefinidas. */
   email!: string;
   password!: string;
   errorMessage!: string;
 
   constructor(private loginService: LoginService) { }
 
+  /**
+   * Esta función maneja el envío de credenciales de inicio de sesión, procesa la respuesta del
+   * servidor en caso de éxito y muestra mensajes de error en caso de falla o campos incompletos.
+   */
   onSubmit(): void {
     this.errorMessage = '';
     if (this.email && this.password) {

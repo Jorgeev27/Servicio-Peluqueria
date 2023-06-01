@@ -11,6 +11,7 @@ import { TipoCortesService } from 'src/app/services/tipoCortes.service';
   styleUrls: ['./cortes-pelo.component.css']
 })
 export class CortesPeloComponent implements OnInit {
+  /* Estas son propiedades de clase en la clase `CortesPeloComponent`. */
   idCorte!: number;
   cortes: Cortes[] = [];
   tipoCorteSeleccionado!: TipoCortes ;
@@ -19,11 +20,17 @@ export class CortesPeloComponent implements OnInit {
 
   constructor(private cortesService: CortesPeloService, private router: Router, private tipoCortesService: TipoCortesService) { }
 
+  /**
+   * La función ngOnInit carga e inicializa datos para un componente en una aplicación Angular.
+   */
   ngOnInit(): void {
     this.cargarCortes();
     this.getTiposCorte();
   }
 
+  /**
+   * Esta función carga cortes y los filtra por tipo.
+   */
   cargarCortes() {
     this.cortesService.getCortes().subscribe(cortes => {
       this.cortes = cortes;
@@ -31,6 +38,9 @@ export class CortesPeloComponent implements OnInit {
     });
   }
 
+  /**
+   * Esta función recupera todos los tipos de cortes de un servicio y los asigna a una variable.
+   */
   getTiposCorte(): void {
     this.tipoCortesService.getAllTiposCorte()
       .subscribe(data => {
@@ -38,6 +48,9 @@ export class CortesPeloComponent implements OnInit {
       });
   }
 
+  /**
+   * Esta función filtra los cortes por su tipo.
+   */
   filtrarCortesPorTipo(): void {
     if (this.tipoCorteSeleccionado) {
       this.cortesFiltrados = this.cortes.filter(corte => corte.id_tipocorte === this.tipoCorteSeleccionado.id_tipo_corte);
@@ -46,6 +59,11 @@ export class CortesPeloComponent implements OnInit {
     }
   }
 
+  /**
+   * Esta función elimina un corte de pelo del servidor y maneja la respuesta.
+   * @param {Cortes} corte - Objeto de Cortes, que representa un corte de pelo o un estilo de corte de
+   * pelo.
+   */
   borrarCorte(corte: Cortes): void {
     console.log(corte.id_corte); // Verificar el valor del id_corte
     this.cortesService.deleteCorte(corte.id_corte).subscribe(
@@ -60,6 +78,9 @@ export class CortesPeloComponent implements OnInit {
   }
   
 
+  /**
+   * Esta función navega a la página del método de pago.
+   */
   navegarReserva() {
     this.router.navigate(['/metodoPago']);
   }

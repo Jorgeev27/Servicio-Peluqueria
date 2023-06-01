@@ -9,6 +9,9 @@ import Swal from 'sweetalert2';
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent {
+  /* `registroForm` es una propiedad de la clase `RegistroComponent` que contiene un objeto `FormGroup`
+  creado usando el servicio `FormBuilder`. Este formulario se utiliza para recopilar información del
+  usuario para registrar un nuevo usuario. */
   registroForm: FormGroup;
   mensaje!: string;
 
@@ -24,6 +27,14 @@ export class RegistroComponent {
     });
   }
 
+  /**
+   * Esta función envía un formulario de registro y muestra un mensaje de éxito o un mensaje de error
+   * si hay un problema.
+   * @returns Si el `registroForm` no es válido, la función regresará sin ejecutar el resto del código.
+   * De lo contrario, registrará al usuario usando `usuariosService` y mostrará un mensaje de éxito
+   * usando `Swal.fire()`. Si hay un error, mostrará un mensaje de error y registrará el error en la
+   * consola. Finalmente, restablecerá el `registroForm`.
+   */
   onSubmit() {
     if (this.registroForm.invalid) {
       return;

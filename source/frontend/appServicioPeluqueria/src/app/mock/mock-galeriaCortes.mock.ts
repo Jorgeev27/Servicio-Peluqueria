@@ -1,7 +1,7 @@
-/* Importación de la clase EquipoFutsal desde el archivo model/equipoFutsal.ts. */
+/* Importación de la clase CortesGaleria desde el archivo model/galeriaCortes.ts. */
 import { CortesGaleria } from "../model/galeriaCortes";
 
-/* Creación de un array constante de objetos de tipo EquipoFutsal. */
+/* Creación de un array constante de objetos de tipo CortesGaleria. */
 export const GALERIACORTES: CortesGaleria[] = [
     {id: 20080, nombre: 'Tapered Afro', descripcion: 'El cabello se corta gradualmente más corto en los lados y la parte posterior, mientras que la parte superior se mantiene en su estado natural de afro.', precio: 25, tipocorte: 'Moderno'},
     {id: 20081, nombre: 'Textured Crop con Flequillo', descripcion: 'El cabello se corta en capas cortas y se texturiza, dejando flequillo en la parte frontal que puede llevarse despeinado o peinado hacia un lado.', precio: 25, tipocorte: 'Desenfadado'},

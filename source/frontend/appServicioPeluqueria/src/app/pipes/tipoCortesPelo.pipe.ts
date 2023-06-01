@@ -6,6 +6,14 @@ import { Pipe, PipeTransform } from "@angular/core";
 
 export class TipoCortesPeloPipe implements PipeTransform {
 
+    /**
+     * Esta función toma una entrada numérica y devuelve una cadena que representa un tipo de corte de
+     * pelo.
+     * @param {number} value - un número que representa un tipo de corte de pelo.
+     * @returns Un valor de cadena que representa un tipo de corte de pelo basado en el valor del
+     * número de entrada. Si el valor del número de entrada no coincide con ninguno de los casos, se
+     * devuelve un mensaje predeterminado.
+     */
     transform(value: number): string {
         switch (value) {
             case 1:
