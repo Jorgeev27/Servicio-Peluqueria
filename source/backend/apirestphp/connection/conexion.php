@@ -6,6 +6,11 @@
     class ConexionBD{
             // protected $conexion;
             private static $lastAffectedRows;
+            /**
+             * Esta función establece una conexión PDO a una base de datos MySQL con manejo de errores.
+             * 
+             * @return PDO un objeto PDO, que representa una conexión a una base de datos.
+             */
             public static function Conexion() :PDO{
                 $conexion = null;
                 try {
@@ -23,6 +28,18 @@
                 return $conexion;      
             }
 
+            /**
+             * Esta es una función de PHP que ejecuta una consulta SQL y devuelve un objeto
+             * PDOStatement o un número entero según el tipo de consulta.
+             * 
+             * @param string sql Un parámetro de cadena que representa la consulta SQL que se va a
+             * ejecutar. Puede ser SELECCIONAR, INSERTAR, ACTUALIZAR, ELIMINAR o cualquier otra
+             * instrucción SQL válida.
+             * 
+             * @return PDOStatement | int ya sea un objeto PDOStatement (si la consulta SQL es una
+             * declaración SELECT) o un número entero (si la consulta SQL no es una declaración
+             * SELECT).
+             */
             public static function consulta(string $sql) : PDOStatement | int {
                 try {                
                     $conexion = self::Conexion(); 
